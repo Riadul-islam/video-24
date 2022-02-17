@@ -1,0 +1,272 @@
+.container-fluid{
+    max-width: 1300px;
+}
+
+
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Rubik', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* RIGHT MENU */
+
+.btn-primary{
+    background-color: #e83b3e !important;  
+    padding: 8px 32px;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-primary{
+    border-color: #111;
+}
+    
+
+.btn-primary::after{
+    content: "";
+    left: 0;
+    top: 0;   
+    height: 100%;
+    width:0 ;
+    position: absolute;
+    background-color: #111 !important;
+    border-color: #111 ;
+    z-index: -1;
+    transition: .4s;
+
+}
+
+.btn-primary:hover::after{
+    
+    width:100% ;
+}
+
+ul.right-menu{
+    
+}
+ul.right-menu li{
+    list-style: none;
+}
+ul.right-menu li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #111;
+    font-weight: 500;
+}
+ul.right-menu li a:hover{}
+
+/* Dropdown menu */
+
+ul.right-menu li{
+    position: relative;
+}
+
+ul.right-menu li ul{
+    position: absolute;
+    width: 300px;
+    left: 0;
+    top: 280%;
+    background-color: #fafafa;
+    list-style: none;
+    padding: 10px ;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+}
+ul.right-menu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 200%;
+ 
+}
+
+ul.right-menu li ul li{
+    padding: 10px 0;
+    flex-direction: column;
+}
+ul.right-menu li ul li a{}
+
+
+
+.search{
+    width: 50px;
+    font-size: 18px;
+    
+}
+
+.call-icon{
+    width: 60px;
+    font-size: 35px;
+    color: #e83b3e;
+    transform: rotateZ(-35deg);
+    position: relative;
+    top: -12px;
+}
+.call-info{
+    width: 210px;
+}
+.call-info a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #111;
+    font-size: 15px;
+}
+
+
+
+/* Slider-section */
+.slider{
+    background: url(./image/banner.jpeg) no-repeat top center;
+    background-size: cover;
+   
+}
+.slider-left{
+    position: relative;
+}
+.social-icon{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+}
+
+.slider-content h6{
+    color: #e83b3e;
+}
+
+.slider-content h1{
+font-size: 60px;
+font-weight: 600;
+margin-bottom: 25px;
+}
+.slider-content p{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.social-icon ul{
+    list-style: none;
+    padding-left: 0;
+    display: inline-block;
+}
+.social-icon ul li{}
+.social-icon ul li span{
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 60px;
+    position: relative;
+    margin-left: 40px;
+}
+
+.social-icon ul li span::after{
+    content: "";
+    height: 1px;
+    width: 35px;
+    left: 120%;
+    top: 50%;
+    background-color: #111;
+    position: absolute;
+}
+.social-icon ul li i{
+    padding: 5px 8px;
+
+}
+
+
+/* Logo Section */
+.slider-logo{}
+.slider-logo ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+/* .slider-logo ul li{}
+.slider-logo ul li a{}
+.slider-logo ul li a img{} */
+
+
+/* About Section */
+
+.about-image{
+    position: relative;
+}
+.image-text{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+    width: 200px;
+    background: url(./image/asset\ 20.png) no-repeat center;
+    background-size: contain;
+}
+
+
+.about-text{}
+.finix-text{}
+.finix-text h6{
+    color: #e73c3e;
+    font-weight: 300;
+}
+.finix-text h3{
+    font-size: 35px;
+    font-weight: 400;
+}
+.finix-text p{}
+.finix-text strong{
+    font-size: 20px;
+    font-weight: 400;
+}
+.finix-text ul{
+    list-style: none;
+    padding-left: 0;
+}
+.finix-text ul li{
+    padding: 5px 0;
+}
+.finix-text ul li::before{
+    content: "\f00c";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 600;
+    font-size: 24px;
+    color: #e83b3e;
+    margin-right: 8px;
+
+}
+
+/* Why Choose us Section */
+
+
+.bg-pri{
+    background-color: #f0f5fa;
+}
+
+
+.features-item{
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 35px;
+}
+.ft-icon{}
+
+.features-item h3{}
+
+.ft-icon i{
+    color: #e73c3e;
+    font-size: 35px;
+    height: 90px;
+    width: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
